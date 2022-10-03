@@ -17,3 +17,12 @@ variable "default_tags" {
   type        = map(string)
   description = "Default tags to add to deployed resources"
 }
+
+variable "name_vnet_rg" {
+  type        = string
+  description = "Name of the vNet resource group"
+}
+variable "name_vnet" {
+  type        = string
+  description = "Name of the vNet"
+}
