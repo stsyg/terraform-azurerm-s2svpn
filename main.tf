@@ -17,7 +17,7 @@ data "azurerm_subnet" "this" {
 data "external" "myipaddr" {
   program = ["bash", "-c", "curl -s 'https://ipinfo.io/json'"]
 }
-
+ /*
 # Create Local Network Gateway (LNG)
 resource "azurerm_local_network_gateway" "this" {
   name                = "${var.prefix}-${var.service}-lng"
@@ -59,3 +59,4 @@ resource "azurerm_virtual_network_gateway_connection" "this" {
   local_network_gateway_id   = azurerm_local_network_gateway.madcaplaughs.id
   shared_key                 = var.vpn_psk #-Provided at run time
 }
+*/
