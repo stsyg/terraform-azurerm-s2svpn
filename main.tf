@@ -69,7 +69,7 @@ resource "azurerm_virtual_network_gateway" "this" {
 resource "azurerm_virtual_network_gateway_connection" "this" {
   name                       = "${var.prefix}-${var.service}-connect01"
   location                   = azurerm_resource_group.this.location
-  resource_group_name        = azurerm_resource_group.this.name
+  resource_group_name        = data.azurerm_subnet.this.resource_group_name
   type                       = "IPsec"
   virtual_network_gateway_id = azurerm_virtual_network_gateway.this.id
   local_network_gateway_id   = azurerm_local_network_gateway.this.id
