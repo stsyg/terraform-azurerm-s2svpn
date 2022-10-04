@@ -26,3 +26,24 @@ variable "name_vnet" {
   type        = string
   description = "Name of the vNet"
 }
+
+variable "name_kv" {
+  type        = string
+  description = "Name of the KeyVault"
+}
+variable "name_kv_rg" {
+  type        = string
+  description = "Name of the KeyVault resource group"
+}
+variable "secret_name01" {
+  type        = string
+  description = "Name of the secret #01 in KeyVault"
+}
+variable "secret_name02" {
+  type        = string
+  description = "Name of the secret #02 in KeyVault"
+}
+variable "lng_address_spaces" {
+  type        = string
+  description = "Local Network Gateway address space"
+}
