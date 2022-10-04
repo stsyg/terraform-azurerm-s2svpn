@@ -52,7 +52,7 @@ resource "azurerm_public_ip" "this" {
 resource "azurerm_virtual_network_gateway" "this" {
   name                = "${var.prefix}-${var.service}-vpngw01"
   location            = azurerm_resource_group.this.location
-  resource_group_name = azurerm_subnet.this.resource_group_name
+  resource_group_name = data.azurerm_subnet.this.resource_group_name
   type                = "Vpn"        #--Other option is ExpressRoute, predictably for ExpressRoute VPNs
   vpn_type            = "RouteBased" #--Policy based is also acceptable here, depending on your use case
   active_active       = false
