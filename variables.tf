@@ -44,6 +44,6 @@ variable "secret_name02" {
   description = "Name of the secret #02 in KeyVault"
 }
 variable "lng_address_spaces" {
-  type        = string
+  type        = list(string)
   description = "Local Network Gateway address space"
 }
