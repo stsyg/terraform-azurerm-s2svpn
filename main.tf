@@ -74,14 +74,14 @@ resource "azurerm_virtual_network_gateway_connection" "this" {
   virtual_network_gateway_id = azurerm_virtual_network_gateway.this.id
   local_network_gateway_id   = azurerm_local_network_gateway.this.id
   shared_key                 = data.azurerm_key_vault_secret.vpngwkey.value #-Provided at run time
-    ipsec_policy {
-    dh_group = "DHGroup2"
-    ike_encryption = "AES256"
-    ike_integrity = "SHA256"
+  ipsec_policy {
+    dh_group         = "DHGroup2"
+    ike_encryption   = "AES256"
+    ike_integrity    = "SHA256"
     ipsec_encryption = "AES256"
-    ipsec_integrity = "SHA1"
-    pfs_group = "None"
-    sa_datasize = "102400000"
-    sa_lifetime = "27000"
-    }
+    ipsec_integrity  = "SHA256"
+    pfs_group        = "None"
+    sa_datasize      = "102400000"
+    sa_lifetime      = "27000"
+  }
 }
