@@ -83,4 +83,5 @@ resource "azurerm_virtual_network_gateway_connection" "this" {
     pfs_group = "None"
     sa_datasize = "102400000"
     sa_lifetime = "27000"
+    }
 }
