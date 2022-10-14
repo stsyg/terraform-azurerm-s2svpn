@@ -21,3 +21,4 @@ repos:
         args:
           - --args=--module
           - --args=--enable-rule=terraform_documented_variables
+      - id: terraform_tfsec
