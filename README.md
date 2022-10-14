@@ -28,6 +28,7 @@ The following resources will be created:
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.2 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~>3.24.0 |
 
 ## Providers

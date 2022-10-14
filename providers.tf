@@ -8,6 +8,7 @@ terraform {
       source = "hashicorp/azuread"
     }
   }
+  required_version = ">= 1.3.2"
 }
 
 provider "azurerm" {
