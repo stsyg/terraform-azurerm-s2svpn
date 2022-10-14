@@ -1,7 +1,6 @@
 # Deployment of Azure Site to Site (S2S) VPN
 
 #### Table of Contents
-  - [Table of Contents](#table-of-contents)
   - [Usage](#usage)
   - [Requirements](#requirements)
   - [Providers](#providers)
@@ -75,3 +74,5 @@ No modules.
 
 No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+[![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
