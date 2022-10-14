@@ -1,5 +1,16 @@
 # Deployment of Azure Site to Site (S2S) VPN
 
+#### Table of Contents
+  - [Table of Contents](#table-of-contents)
+  - [Usage](#usage)
+  - [Requirements](#requirements)
+  - [Providers](#providers)
+  - [Modules](#modules)
+  - [Resources](#resources)
+  - [Inputs](#inputs)
+  - [Outputs](#outputs)
+## Usage
+
 The following resources will be created:
 
 - Azure Local Network Gateway
